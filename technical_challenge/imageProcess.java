@@ -58,12 +58,12 @@ public class imageProcess {
         e.printStackTrace();
     } finally {
         try {
-        fileWriter.flush();
-        fileWriter.close();
-      } catch (IOException e) {
+          fileWriter.flush();
+          fileWriter.close();
+        } catch (IOException e) {
             System.out.println("Error while flushing/closing fileWriter !!!");
             e.printStackTrace();
-      }
+        }
     }
   }
 
