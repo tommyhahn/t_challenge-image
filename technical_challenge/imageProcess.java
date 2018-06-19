@@ -43,16 +43,11 @@ public class imageProcess {
         br = new BufferedReader(new FileReader(file));
 
         while ((st = br.readLine()) != null) {
-
           // record++;
           // if(record == 6) break;
-
+          
           readWriteCSV(st);
         }
-        
-
-        
-
     } catch (Exception e) {
         System.out.println("Error in CsvFileWriter !!!");
         e.printStackTrace();
@@ -69,7 +64,6 @@ public class imageProcess {
 
   public static void readWriteCSV(String st) throws Exception {
     try {
-
       // Read image and process the image
       url = new URL(st);
       image = ImageIO.read(url);
