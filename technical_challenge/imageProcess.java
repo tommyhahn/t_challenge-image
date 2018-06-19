@@ -70,7 +70,7 @@ public class imageProcess {
   public static void readWriteCSV(String st) throws Exception {
     try {
 
-      // Read image and processing the image
+      // Read image and process the image
       url = new URL(st);
       image = ImageIO.read(url);
       int width = image.getWidth();
